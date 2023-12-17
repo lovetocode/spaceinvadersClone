@@ -14,6 +14,8 @@ func _ready():
 	var rect = get_viewport().get_visible_rect()
 	var camera = get_viewport().get_camera_2d()
 	var camera_position = camera.position
+	start_bound = (camera_position.x - rect.size) / 2
+	end_bound = (camera_position.x + rect.size) / 2
 	
 
 
